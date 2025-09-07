@@ -26,6 +26,10 @@ html {
   padding-bottom: 3rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 #Navbar {
   display: flex;
   justify-content: space-between;
