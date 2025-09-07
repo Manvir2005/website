@@ -1,0 +1,420 @@
+@font-face {
+  font-family: Alliance;
+  src: url(fonts/AllianceNo1.ttf);
+}
+
+@font-face {
+  font-family: Mona;
+  src: url(fonts/MonaSans.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  font-synthesis: none;
+  scroll-snap-type: y mandatory;
+}
+
+.hero-section {
+  padding-bottom: 3rem;
+}
+
+#Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem min(5rem, 10%) 3rem;
+}
+
+#menu-logo {
+  height: 3.2rem;
+  width: auto;
+}
+
+.menu-mob {
+  display: none;
+}
+
+.menu-desk {
+  font-family: Mona;
+  color: #323232;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.menu-desk-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.subheading-cta-mob {
+  display: none;
+}
+
+.menu-desk-links a {
+  text-decoration: none;
+  color: #323232;
+  padding-right: 2rem;
+}
+
+.hero-heading-desk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Alliance;
+  color: #323232;
+  font-size: clamp(2rem, 2.2253rem + 2.5584vw, 4.6rem);
+  font-weight: 700;
+  padding-top: 5rem;
+}
+
+.hero-subheading-desk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Mona;
+  color: #323232;
+  font-size: clamp(1.125rem, 0.9338rem + 1.2236vw, 2.2rem);
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
+.hero-heading-mob {
+  display: none;
+}
+
+.hero-subheading-mob {
+  display: none;
+}
+
+.cta-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.cta-btn {
+  background-color: white;
+  border: 1.8px solid #323232;
+  border-radius: 18px;
+  padding: 1.5rem 5rem;
+  font-family: Mona;
+  font-size: clamp(1.1rem, 0.8245rem + 0.723vw, 1.8rem);
+  font-weight: 400;
+}
+
+.cta-btn:hover {
+  border: 1.8px solid #323232;
+  border-radius: 18px;
+  color: white;
+  background-color: #323232;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+.contain-cards-features {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-right: 0.5rem;
+}
+
+.contain-cards-about {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  padding-right: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.features-heading-content-mob {
+  display: none;
+}
+.features-heading-mob {
+  display: none;
+}
+
+.features-heading-desk {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: min(5rem, 10%);
+  padding-top: 10rem;
+}
+
+.features-heading-content {
+  font-family: Mona;
+  font-size: clamp(1.2rem, 1.2914rem + 1.3348vw, 3rem);
+  font-weight: 600;
+  color: #5c6a79;
+}
+
+.bold {
+  color: #323232;
+}
+
+.cards-container-features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 9rem 5rem;
+  gap: 40px;
+}
+
+.cards-container-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 9rem 5rem;
+  gap: 40px;
+}
+
+.card-heading {
+  font-family: Mona;
+  font-size: clamp(1rem, 0.8957rem + 0.6674vw, 1.75rem);
+  font-weight: 600;
+}
+
+.card-content {
+  font-family: Mona;
+  font-size: clamp(0.75rem, 0.6805rem + 0.4449vw, 1.25rem);
+  font-weight: 400;
+  padding-top: 1rem;
+  color: #5c6a79;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  max-height: 11.5rem;
+  max-width: auto;
+  min-width: 16rem;
+  min-height: 4rem;
+  padding: 2.5rem 2rem 3rem;
+  padding-right: 4rem;
+  border-radius: 18px;
+  box-shadow: 0px 4px 60px 0px rgba(38, 42, 50, 0.12);
+  -webkit-box-shadow: 0px 4px 60px 0px rgba(38, 42, 50, 0.12);
+  -moz-box-shadow: 0px 4px 60px 0px rgba(38, 42, 50, 0.12);
+}
+
+.about {
+  background-color: #f6f8fa;
+  padding-bottom: 10%;
+  overflow: hidden;
+}
+
+.heading-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Mona;
+  font-size: clamp(2rem, 1.7219rem + 1.7798vw, 4rem);
+  font-weight: 600;
+  padding-top: 8rem;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #5c6a79;
+  border-radius: 16px;
+  margin: auto;
+  padding-top: 5rem;
+  max-width: 80rem;
+}
+
+.heading-cta {
+  font-family: Mona;
+  font-size: clamp(1.625rem, 1.2079rem + 2.6696vw, 3rem);
+  font-weight: 600;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.subheading-cta {
+  font-family: Mona;
+  font-size: clamp(0.75rem, 0.5762rem + 1.1123vw, 1.5rem);
+  font-weight: 450;
+  padding-top: 1.5rem;
+  color: #5c6a79;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.cta-container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+}
+
+.cta-btn-about {
+  background-color: #262a32;
+  color: #ffffff;
+  border: #262a32 0px;
+  border-radius: 16px;
+  padding: 1.4rem 4rem;
+  font-family: Mona;
+  font-size: clamp(0.875rem, 0.7533rem + 0.7786vw, 1rem);
+  font-weight: 500;
+}
+
+.cta-btn-about:hover {
+  cursor: pointer;
+  background-color: #414755;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-desk {
+    display: none;
+  }
+  .menu-mob {
+    display: flex;
+    height: 1.8rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #menu-logo {
+    height: 2.8rem;
+    width: auto;
+  }
+  .menu-mob{
+    height: 1.4rem;
+    width: auto;
+  }
+  .hero-heading-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Alliance;
+    color: #323232;
+    font-size: clamp(2.625rem, 2.2253rem + 2.5584vw, 5.5rem);
+    font-weight: 700;
+    padding-top: 3rem;
+  }
+  .hero-heading-desk {
+    display: none;
+  }
+  .hero-subheading-desk {
+    display: none;
+  }
+  .hero-subheading-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Mona;
+    color: #323232;
+    font-size: clamp(1.125rem, 0.9338rem + 1.2236vw, 2.5rem);
+    font-weight: 400;
+    padding-top: 2rem;
+  }
+  .cta-container {
+    padding-top: min(5rem, 10%);
+  }
+  .subheading-cta {
+    display: none;
+  }
+
+  .subheading-cta-mob {
+    display: flex;
+    font-family: Mona;
+    font-size: clamp(0.875rem, 0.7186rem + 1.0011vw, 2rem);
+    font-weight: 450;
+    padding-top: 1rem;
+    color: #5c6a79;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+  .cta-btn-about {
+    padding: 1.2rem 3rem;
+  }
+  .cta-container-btn {
+    margin: 2rem 0rem;
+  }
+  .features-heading-content {
+    display: none;
+  }
+  .features-heading-desk {
+    display: none;
+  }
+  .features-heading-content-mob {
+    display: inline;
+    font-family: Mona;
+    font-size: clamp(1.5rem, 1.2914rem + 1.3348vw, 3rem);
+    font-weight: 600;
+    color: #5c6a79;
+  }
+  .features-heading-mob {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: min(5rem, 5%);
+    padding-right: 6%;
+    padding-top: 16rem;
+  }
+  .cta-container {
+    margin: 4rem min(5rem, 5%);
+  }
+  .cards-container-features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin: 5rem 5%;
+  }
+  .cards-container-about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin: 5rem 5% 2rem;
+  }
+  .cta-btn-about {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #menu-logo {
+    height: 2.5rem;
+    width: auto;
+  }
+  .hero-heading-desk {
+    padding-top: 0rem;
+  }
+  .cta-btn {
+    border: 1.5px solid #000;
+    border-radius: 16px;
+  }
+  .cta-btn-container {
+    padding-top: 5rem;
+  }
+  .features-heading-mob {
+    padding-top: 10rem;
+  }
+  .heading-about {
+    padding-top: 5rem;
+  }
+}
