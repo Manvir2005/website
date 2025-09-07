@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.main-btn {
+  color: #323232;
+}
+
 * {
   margin: 0;
   padding: 0;
